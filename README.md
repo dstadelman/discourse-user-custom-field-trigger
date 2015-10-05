@@ -3,7 +3,9 @@ discourse-user-custom-field-trigger
 
 Plugin for [Discourse](http://discourse.org) to adds a DiscourseEvent trigger to the UserCustomField on after_save.
 
-Can be used with [Discourse-Webhooks](https://github.com/rcfox/Discourse-Webhooks) if the `user_custom_field_changed` event is hooked in the settings.
+Can be used with [Discourse-Webhooks](https://github.com/rcfox/Discourse-Webhooks) if the `user_custom_field_changed` event is set in the `webhooks` settings.
+
+**Make sure you restart Discourse after modifying the `webhooks` settings!**
 
 Installation
 ============
