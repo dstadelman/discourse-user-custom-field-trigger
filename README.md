@@ -5,7 +5,7 @@ Plugin for [Discourse](http://discourse.org) to adds a DiscourseEvent trigger to
 
 Can be used with [Discourse-Webhooks](https://github.com/rcfox/Discourse-Webhooks) if the `user_custom_field_changed` event is set in the `webhooks` settings.
 
-**Make sure you restart Discourse after modifying the `webhooks` settings!**
+**Make sure you restart Discourse after modifying the `webhooks` plugin's `webhooks registered events` setting!**
 
 Installation
 ============
