@@ -4,10 +4,8 @@
 # authors: Daniel Stadelman
 # url: https://github.com/ruffbytes/discourse-user-custom-field-trigger
 
-after_initialize do
-  UserCustomField.class_eval do
-    after_save do
-      DiscourseEvent.trigger(:user_custom_field_changed, self.user_id, self.name, self.value)
-    end
+UserCustomField.class_eval do
+  after_save do
+    DiscourseEvent.trigger(:user_custom_field_changed, self.user_id, self.name, self.value)
   end
 end
